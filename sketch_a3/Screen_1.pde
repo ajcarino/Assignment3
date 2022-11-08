@@ -6,9 +6,13 @@ String typing = "";
 // Variable to store saved text when return is hit
 String saved = "";
 
+int rectWidth = 220;
+int rectHeight = 220;
+
 void setup() {
-  size(480, 270);
+  size(1920, 1080);
   f = createFont("Arial",16);
+  
 }
 
 void draw() {
@@ -23,6 +27,8 @@ void draw() {
   text("Click in this window and type. \nHit enter to save. ", indent, 40);
   text("Input: " + typing,indent,190);
   text("Saved text: " + saved,indent,230);
+  
+  rect(120, 80, rectWidth, rectHeight, 28);
 }
 
 void keyPressed() {
