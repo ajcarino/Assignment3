@@ -1,16 +1,11 @@
-PFont screen1Title;
+
 
 void screen1() {
-  rect(0, height/2, width/2, height/2, 0);
-  fill(rect1Color);
+  rect(width/2, 0, width/2, height, 0); //BLUE
+  fill(rect1Color); 
   stroke(#000000);
-  screen1Title = createFont("Arial", 16,true); // Create Font
-}
-
-void screen1Title(){
-  textFont(screen1Title, 16); // Specify font to be used
-  fill(#656FD8); //Specify Font Colour
-  text("Screen 1: Input", 10, 100); //Display Text
+  
+  
   
 }
 
